@@ -1,0 +1,24 @@
+[2026-09-16 10:29:55] === Retry-failed started ===
+[2026-09-16 10:29:55] Found 5 queries with fewer than 7 results: ['How did darius reorganize and improve the persian government', 'How did your universe form', 'What city does shane dawson live', 'How many calories in a cup if fresh strawberries', 'What is the significance of fecalysis']
+[2026-09-16 10:29:55] Waiting 3 minutes before the first request (a debug request was sent a few minutes ago) ...
+[2026-09-16 10:32:55] --- Retrying (1/5): 'How did darius reorganize and improve the persian government' ---
+[2026-09-16 10:32:56]   -> got 7 results
+[2026-09-16 10:32:56]   Updated ./hw1.json (improved from before).
+[2026-09-16 10:32:56] --- Retrying (2/5): 'How did your universe form' ---
+[2026-09-16 10:34:33]   0 results, backing off 180s before retry...
+[2026-09-16 10:37:34]   -> got 7 results
+[2026-09-16 10:37:34]   Updated ./hw1.json (improved from before).
+[2026-09-16 10:37:34] --- Retrying (3/5): 'What city does shane dawson live' ---
+[2026-09-16 10:37:53]   -> got 6 results
+[2026-09-16 10:37:53]   No improvement over existing result -- keeping the old one.
+[2026-09-16 10:37:53] --- Retrying (4/5): 'How many calories in a cup if fresh strawberries' ---
+[2026-09-16 10:39:11]   0 results, backing off 180s before retry...
+[2026-09-16 10:42:12]   -> got 7 results
+[2026-09-16 10:42:12]   Updated ./hw1.json (improved from before).
+[2026-09-16 10:42:12] --- Retrying (5/5): 'What is the significance of fecalysis' ---
+[2026-09-16 10:43:07]   0 results, backing off 180s before retry...
+[2026-09-16 10:46:08]   -> got 7 results
+[2026-09-16 10:46:08]   Updated ./hw1.json (improved from before).
+[2026-09-16 10:46:08] --- Regenerating hw1.csv / hw1.txt ---
+[2026-09-16 10:46:08] Analysis exited with code 0.
+[2026-09-16 10:46:08] === Retry-failed finished ===

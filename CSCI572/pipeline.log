@@ -1,0 +1,16 @@
+[2026-09-15 17:49:54] === Pipeline started ===
+[2026-09-15 17:49:54] Waiting 20 minutes for Yahoo's rate limit to cool down...
+[2026-09-15 18:09:54] --- Debug check attempt 1 ---
+[2026-09-15 18:09:56] Debug check status code: 200
+[2026-09-15 18:09:56] Debug check found 7 results (sample: ['https://www.toureiffel.paris/en', 'https://en.wikipedia.org/wiki/Eiffel_Tower'])
+[2026-09-15 18:09:56] Debug check PASSED.
+[2026-09-15 18:09:56] --- Running --test check (3 queries) ---
+[2026-09-15 18:09:57] Test query 'Some important facts on the respiratory system' -> 7 results
+[2026-09-15 18:10:03] Test query 'You want to text dirty with your boyfriend what should you say' -> 7 results
+[2026-09-15 18:10:09] Test query 'Can you give me example of anecdotes by the filipino writers' -> 7 results
+[2026-09-15 18:10:14] Test check PASSED.
+[2026-09-15 18:10:14] --- Starting full 100-query scrape (this normally takes 1-1.5 hours, longer if any queries need backoff retries) ---
+[2026-09-15 22:43:28] Full scrape completed.
+[2026-09-15 22:43:28] ./hw1.json has 100 queries, 4 with 0 results.
+[2026-09-15 22:43:28] --- Running Task 2 analysis ---
+[2026-09-15 22:43:28] === Pipeline completed successfully. hw1.csv is ready. ===
