@@ -1,4 +1,0 @@
-[2026-09-16 00:59:37] === n=30 test started ===
-[2026-09-16 00:59:37] Waiting 20 minutes to make sure Yahoo's rate limit is fully clear...
-[2026-09-16 01:35:07] PLAIN: status 500 (not 200)
-[2026-09-16 01:35:07] Plain request failed -- Yahoo still appears blocked. Aborting n=30 test; not touching the working scraper. Try again later.
