@@ -1,0 +1,8 @@
+.venv/
+test_*/
+test_*.log
+output_*/
+cloud_*/
+crawl.log
+crawl.zip
+__pycache__/
