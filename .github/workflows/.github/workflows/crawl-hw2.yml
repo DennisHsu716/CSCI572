@@ -1,0 +1,1 @@
+   cat ~/CSCI572/.github/workflows/crawl-hw2.yml | pbcopy
