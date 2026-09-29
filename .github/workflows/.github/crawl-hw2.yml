@@ -1,0 +1,52 @@
+name: HW2 crawl
+
+on:
+  workflow_dispatch:
+    inputs:
+      site:
+        description: "News site"
+        required: true
+        default: foxnews
+        type: choice
+        options: [foxnews, latimes, usatoday, nytimes, wsj]
+      max_pages:
+        description: "Max pages"
+        required: true
+        default: "20000"
+      delay:
+        description: "Seconds between requests"
+        required: true
+        default: "0.9"
+
+jobs:
+  crawl:
+    runs-on: ubuntu-latest
+    timeout-minutes: 355
+    defaults:
+      run:
+        working-directory: hw2
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install requests beautifulsoup4 lxml
+
+      - name: Crawl
+        timeout-minutes: 330
+        run: >
+          python -u crawler.py
+          --site ${{ inputs.site }}
+          --max-pages ${{ inputs.max_pages }}
+          --delay ${{ inputs.delay }}
+
+      - name: Upload results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: output_${{ inputs.site }}
+          path: hw2/output_${{ inputs.site }}/
+          retention-days: 7
